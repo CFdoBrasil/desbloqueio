@@ -257,7 +257,7 @@ function gerarPDF() {
     let motivoBlock = document.getElementById("motivoBlock").value;
     let lacreAnt = document.getElementById("lacreAnt").value;
     let lacreNov = document.getElementById("lacreNov").value;
-
+    let numSerie = document.getElementById("numSerie").value;
 
     var pop = window.open();
 
@@ -273,7 +273,7 @@ function gerarPDF() {
             valor +
             "</p><h3> | Modelo: </h3><p>" +
             model +
-            "</p><br><br><h3>Código de Bloqueio: </h3><p>"+ codBlock +"</p><br><h3>Motivo do Bloqueio: </h3><p>"+ motivoBlock +"</p><br><br><h3>Lacre Antigo: </h3><p>"+ lacreAnt +"</p><br><h3>Lacre Novo:</h3><p>"+ lacreNov +"</p><br><br><h3>Observação: </h3><p>" +
+            "</p><br><br><h3>Equipamento: </h3><p></p>" + numSerie+"<br>br><h3>Código de Bloqueio: </h3><p>"+ codBlock +"</p><br><h3>Motivo do Bloqueio: </h3><p>"+ motivoBlock +"</p><br><br><h3>Lacre Antigo: </h3><p>"+ lacreAnt +"</p><br><h3>Lacre Novo:</h3><p>"+ lacreNov +"</p><br><br><h3>Observação: </h3><p>" +
             obs +
             "</p><br><br><br><br><br><br><br><br><br><br><h1>CF do BRASIL</h1></body></html>")
 	);
