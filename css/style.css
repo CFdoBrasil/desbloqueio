@@ -1,0 +1,29 @@
+body {
+	font-size: 22px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: left;
+	display: inline;
+}
+
+h3 {
+	display: inline;
+}
+
+p {
+	display: inline;
+	font-size: 22px;
+}
+
+input {
+	width: auto;
+}
+
+div {
+	text-align: center;
+}
