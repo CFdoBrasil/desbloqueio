@@ -252,12 +252,18 @@ function gerarPDF() {
 	let obs = document.getElementById("obs").value;
 	let tec = document.getElementById("nomeTec").value;
 	let razSoc = document.getElementById("razSoc").value;
+    let os = document.getElementById("os").value;
+    let codBlock = document.getElementById("codBlock").value;
+    let motivoBlock = document.getElementById("motivoBlock").value;
+    let lacreAnt = document.getElementById("lacreAnt").value;
+    let lacreNov = document.getElementById("lacreNov").value;
+
 
     var pop = window.open();
 
 	pop.print(
 		(pop.document.body.innerHTML =
-			"<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='I=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>body{font-size: 22px;}h1 {text-align: center;}h2 {text-align: left;display: inline;}h3 {display: inline;}p {display: inline;font-size: 22px;}input {width: auto;}div {text-align: center;}</style><title>Document</title></head><body><h1><b>FORMULARIO DE DESBLOQUEIO</b></h1><br><h2>Ordem de Serviço:</h2><br><h2>Técnico: </h2><p>" +
+			"<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='I=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>body{font-size: 22px;}h1 {text-align: center;}h2 {text-align: left;display: inline;}h3 {display: inline;}p {display: inline;font-size: 22px;}input {width: auto;}div {text-align: center;}</style><title>Document</title></head><body><h1><b>FORMULARIO DE DESBLOQUEIO</b></h1><br><h2>Ordem de Serviço:</h2><p>"+ os +"</p><br><h2>Técnico: </h2><p>" +
             tec +
             "</p><br><br><h3>Razão Social: </h3><p>" +
             razSoc +
@@ -267,7 +273,7 @@ function gerarPDF() {
             valor +
             "</p><h3> | Modelo: </h3><p>" +
             model +
-            "</p><br><br><h3>Código de Bloqueio: </h3><br><h3>Motivo do Bloqueio: </h3><br><br><h3>Lacre Antigo: </h3><br><h3>Lacre Novo:</h3><br><br><h3>Observação: </h3><p>" +
+            "</p><br><br><h3>Código de Bloqueio: </h3><p>"+ codBlock +"</p><br><h3>Motivo do Bloqueio: </h3><p>"+ motivoBlock +"</p><br><br><h3>Lacre Antigo: </h3><p>"+ lacreAnt +"</p><br><h3>Lacre Novo:</h3><p>"+ lacreNov +"</p><br><br><h3>Observação: </h3><p>" +
             obs +
             "</p><br><br><br><br><br><br><br><br><br><br><h1>CF do BRASIL</h1></body></html>")
 	);
