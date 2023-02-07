@@ -263,7 +263,7 @@ function gerarPDF() {
 
 	pop.print(
 		(pop.document.body.innerHTML =
-			"<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='I=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>body{font-size: 22px;}h1 {text-align: center;}h2 {text-align: left;display: inline;}h3 {display: inline;}p {display: inline;font-size: 22px;}input {width: auto;}div {text-align: center;}</style><title>Document</title></head><body><h1><b>FORMULARIO DE DESBLOQUEIO</b></h1><br><h2>Ordem de Serviço:</h2><p>"+ os +"</p><br><h2>Técnico: </h2><p>" +
+			"<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta http-equiv='X-UA-Compatible' content='I=edge'><meta name='viewport' content='width=device-width, initial-scale=1.0'><style>body{font-size: 22px;}h1 {text-align: center;}h2 {text-align: left;display: inline;}h3 {display: inline;}p {display: inline;font-size: 22px;}input {width: auto;}div {text-align: center;}</style><title></title></head><body><h1><b>FORMULARIO DE DESBLOQUEIO</b></h1><br><h2>Ordem de Serviço:</h2><p>"+ os +"</p><br><h2>Técnico: </h2><p>" +
             tec +
             "</p><br><br><h3>Razão Social: </h3><p>" +
             razSoc +
