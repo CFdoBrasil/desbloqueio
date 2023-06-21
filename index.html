@@ -24,7 +24,7 @@
 <h3>Razão Social:</h3>
 <input type="text" id="razSoc" name="razSoc" maxlength="115" size="14"><button onclick="razSoC()">LIMPAR</button>
 <br>
-<h3>CNPJ: </h3><input ondown="cnpjFormat(this.value)" placeholder="**.***.***/****-**" type="text" id="CNPJ" name="CNPJ" required minlength="14" maxlength="18" size="14"><button onclick="cnpjFClear()">LIMPAR</button>
+<h3>CNPJ: </h3><input onkeydown="cnpjFormat(this.value);" placeholder="**.***.***/****-**" type="text" id="CNPJ" name="CNPJ" required minlength="14" maxlength="18" size="14"><button onclick="cnpjFClear()">LIMPAR</button>
 <br><br>
 <h3>Equipamento: </h3>
 <select onchange="getEqp(this.value)" id="eqp">
