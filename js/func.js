@@ -1,18 +1,11 @@
 function cnpjFormat(cnpj) {
-	console.log(cnpj.length);
-	if (cnpj.length == 2) {
-		document.getElementById("CNPJ").value += ".";
-	}
-	if (cnpj.length == 6) {
-		document.getElementById("CNPJ").value += ".";
-	}
-	if (cnpj.length == 10) {
-		document.getElementById("CNPJ").value += "/";
-	}
-	if (cnpj.length == 15) {
-		document.getElementById("CNPJ").value += "-";
-	}
-	//
+	var cnpj = document.getElementById("CNPJ");
+	cnpj.addEventListener('input', function() {
+    	var value = this.value;
+    	value = value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+   	value = value.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5'); // Formata o CNPJ
+    	this.value = value;
+  });
 	console.log(cnpj);
 }
 
